@@ -1,0 +1,6 @@
+---
+:backends:
+    - yaml
+:hierarchy:
+    - "modules/%{calling_module}/hieradata/common"
+    - "hieradata/common"
