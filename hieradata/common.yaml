@@ -1,0 +1,8 @@
+---
+# DIXPRS defaults for across all installs
+dixprs::symbol: "S#"
+dixprs::beaconText: DIXPRS on a Raspberry Pi
+dixprs::aprsisHost: rotate.aprs2.net
+dixprs::aprsisFilter: r/@/50
+dixprs::kissPort: /dev/ttyAMA0
+dixprs::serialSpeed: 9600
