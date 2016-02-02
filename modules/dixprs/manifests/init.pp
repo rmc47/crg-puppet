@@ -30,7 +30,6 @@ class dixprs (
 	exec { 'disable-console-tty':
 		command => 'sed -i "s/console=ttyAMA0[^\\ ]*\\ //" /boot/cmdline.txt',
 		cwd => '/',
-		shell => true,
 		unless => 'grep -q ttyAMA /boot/cmdline.txt',
 	}
 }
