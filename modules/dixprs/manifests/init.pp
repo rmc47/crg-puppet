@@ -28,8 +28,8 @@ class dixprs (
 
 	# Disable the RS232 console on the Pi, because it eats up the serial port
 	exec { 'disable-console-tty':
-		command => 'sed -i "s/console=ttyAMA0[^\\ ]*\\ //" /boot/cmdline.txt',
+		command => '/bin/sed -i "s/console=ttyAMA0[^\\ ]*\\ //" /boot/cmdline.txt',
 		cwd => '/',
-		unless => 'grep -q ttyAMA /boot/cmdline.txt',
+		unless => '/bin/grep -q ttyAMA /boot/cmdline.txt',
 	}
 }
