@@ -45,13 +45,13 @@
 # Mandatory parameters
 
 # Your callsign with SSID
-CALLSIGN=<%= scope['dixprs::params::callsign'] %>
+CALLSIGN=<%= scope['dixprs::callsign'] %>
 
 # Degrees; West is negative, East is positive
-LONGITUDE=<%= scope['dixprs::params::longitude'] %>
+LONGITUDE=<%= scope['dixprs::longitude'] %>
 
 # Degrees; South is negative, North is posittive
-LATITUDE=<%= scope['dixprs::params::latitude'] %>
+LATITUDE=<%= scope['dixprs::latitude'] %>
 
 # Optional parameters
 
@@ -65,7 +65,7 @@ LATITUDE=<%= scope['dixprs::params::latitude'] %>
 #SPOOL=<path>
 
 # Station symbol; default is S#
-SYMBOL=<%= scope['dixprs::params::symbol'] %>
+SYMBOL=<%= scope['dixprs::symbol'] %>
 
 # UDP port base number; default is 31110
 #UDPBASE=<n>
@@ -75,7 +75,7 @@ SYMBOL=<%= scope['dixprs::params::symbol'] %>
 
 # Beacon text; %v replaced with actual version string; default is %v
 # Used as default for ISGW and RADIO
-BCNTXT=<%= scope['dixprs::params::beaconText'] %>
+BCNTXT=<%= scope['dixprs::beaconText'] %>
 
 # Select km/mi on monitor and in DX list; default is y (km)
 #METRIC=<y/n>
@@ -101,7 +101,7 @@ BCNTXT=<%= scope['dixprs::params::beaconText'] %>
 # Mandatory parameters
 
 # Domain name of IS server to connect
-host=<%= scope['dixprs::params::aprsisHost'] %>
+host=<%= scope['dixprs::aprsisHost'] %>
 
 # Optional parameters
 
@@ -110,7 +110,7 @@ host=<%= scope['dixprs::params::aprsisHost'] %>
 
 # Filter; default is r/@/150
 # @ is replaced with station position
-FILTER=<%= scope['dixprs::params::aprsisFilter'] %>
+FILTER=<%= scope['dixprs::aprsisFilter'] %>
 
 #################################################################
 #                                                               #
@@ -140,10 +140,10 @@ port=9999
 INTERFACE=KISS
 
 # Serial port
-PORT=<%= scope['dixprs::params::kissPort'] %>
+PORT=<%= scope['dixprs::kissPort'] %>
 
 # Serial port speed
-SPEED=<%= scope['dixprs::params::serialSpeed'] %>
+SPEED=<%= scope['dixprs::serialSpeed'] %>
 
 # Optional parameters
 
