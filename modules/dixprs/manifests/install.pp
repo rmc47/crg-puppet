@@ -8,4 +8,8 @@ class dixprs::install {
 		user => 'pi',
 		revision => 'master',
 	}
+	->
+	file {'/home/pi/dixprs/dixprs.py':
+		mode => 755,
+	}
 }
