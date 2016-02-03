@@ -33,7 +33,7 @@ class dixprs (
 		unless => '/bin/grep -q ttyAMA /boot/cmdline.txt',
 	}
 	exec { 'disable-console-tty-systemd':
-		command => 'systemctl mask serial-getty@ttyAMA0.service',
+		command => '/bin/systemctl mask serial-getty@ttyAMA0.service',
 		# TODO: make this conditional
 	}
 }
