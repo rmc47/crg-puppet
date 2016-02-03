@@ -30,7 +30,7 @@ class dixprs (
 	exec { 'disable-console-tty':
 		command => '/bin/sed -i "s/console=ttyAMA0[^\\ ]*\\ //" /boot/cmdline.txt',
 		cwd => '/',
-		unless => '/bin/grep -q ttyAMA /boot/cmdline.txt',
+		unless => '/bin/grep -qv ttyAMA /boot/cmdline.txt',
 	}
 	exec { 'disable-console-tty-systemd':
 		command => '/bin/systemctl mask serial-getty@ttyAMA0.service',
