@@ -1,4 +1,4 @@
-class role_mb7upi_pi {
+class role_mb7upi_vm {
 	user {'pi':
 		ensure => present,
 		home => '/home/pi',
