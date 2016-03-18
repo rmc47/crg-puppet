@@ -34,6 +34,7 @@ class dixprs (
 	}
 	exec { 'disable-console-tty-systemd':
 		command => '/bin/systemctl mask serial-getty@ttyAMA0.service',
+		onlyif => '/bin/ls /dev/ttyAMA0', # Only do it if AMA0 exists
 		# TODO: make this conditional
 	}
 }
