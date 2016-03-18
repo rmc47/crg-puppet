@@ -10,5 +10,6 @@ class role_mb7upi_vm {
 		callsign => hiera("dixprs::callsign"),
 		latitude => hiera("dixprs::latitude"),
 		longitude => hiera("dixprs::longitude"),
+		serialSpeed => hiera("dixprs::serialSpeed"),
 	}
 }
