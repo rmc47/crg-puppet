@@ -3,3 +3,4 @@ dixprs::callsign: MB7UPI
 dixprs::latitude: 52.009807
 dixprs::longitude: -0.001924
 dixprs::serialSpeed: 9600
+dixprs::kissPort: /dev/ttyS0
