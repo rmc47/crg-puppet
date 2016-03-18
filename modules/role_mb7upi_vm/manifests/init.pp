@@ -11,5 +11,6 @@ class role_mb7upi_vm {
 		latitude => hiera("dixprs::latitude"),
 		longitude => hiera("dixprs::longitude"),
 		serialSpeed => hiera("dixprs::serialSpeed"),
+		kissPort => hiera("dixprs::kissPort"),
 	}
 }
