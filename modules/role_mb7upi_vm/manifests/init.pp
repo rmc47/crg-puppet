@@ -3,6 +3,7 @@ class role_mb7upi_vm {
 		ensure => present,
 		home => '/home/pi',
 		groups => 'dialout',
+		managehome => true,
 	}
 	->
 	class {'dixprs':
