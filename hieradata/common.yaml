@@ -2,7 +2,7 @@
 # DIXPRS defaults for across all installs
 dixprs::symbol: "S#"
 dixprs::beaconText: DIXPRS on a Raspberry Pi
-dixprs::aprsisHost: euro.aprs2.net
+dixprs::aprsisHost: london.aprs2.net
 dixprs::aprsisFilter: r/@/50
 dixprs::kissPort: /dev/ttyAMA0
 dixprs::serialSpeed: 19200
