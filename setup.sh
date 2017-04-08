@@ -1,6 +1,6 @@
 #!/bin/bash
-wget https://apt.puppetlabs.com/puppetlabs-release-jessie.deb
-sudo dpkg -i puppetlabs-release-jessie.deb
+wget https://apt.puppetlabs.com/puppetlabs-release-pc1-jessie.deb
+sudo dpkg -i puppetlabs-release-pc1-jessie.deb
 sudo apt-get update
 sudo apt-get install puppet
 sudo puppet module install puppetlabs-vcsrepo
