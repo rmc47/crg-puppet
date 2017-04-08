@@ -10,6 +10,10 @@ class crg_common {
 	package { 'git':
 		ensure => latest,
 	}
+	
+	package { 'python-serial':
+		ensure => latest,
+	}
 
 	service {'ntp':
 		ensure => running,
