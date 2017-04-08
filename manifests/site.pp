@@ -12,3 +12,7 @@ node 'mb7upi-vm' {
 	include crg_common
 	include role_mb7upi_vm
 }
+node 'mb7um' {
+	include crg_common
+	include role_mb7um_pi
+}
